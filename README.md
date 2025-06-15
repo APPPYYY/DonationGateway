@@ -22,15 +22,18 @@ Razorpay account (for API keys)
 
 **Setup**
 Clone the repository
-git clone https://github.com/yourusername/donation-gateway.git
+git clone https://github.com/APPPYYY/DonationGateway.git
 Navigate into the project directory
 cd donation-gateway
-Configure your Razorpay API keys in RazorpayController
-private static final String RAZORPAY_TEST_CLIENT_ID=your_client_id
-private static final String RAZORPAY_TEST_CLIENT_SECRET=your_client_secret
+Configure your Razorpay API keys in 
+✅ Java File - RazorpayController (.java):
+private static final String RAZORPAY_TEST_CLIENT_ID = "rzp_test_YourActualClientId";
+private static final String RAZORPAY_TEST_CLIENT_SECRET = "YourActualClientSecret";
+✅ JSP File (\src\main\webapp\views\donation.jsp at line 164):
+key: "rzp_test_YourActualClientId",
 Build and run the Spring Boot application
 ./mvnw spring-boot:run
-Open your browser and go to http://localhost:8080
+Open your browser and go to http://localhost:8080/pay/donation
 
 How it works
 User enters donation amount
